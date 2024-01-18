@@ -4,7 +4,7 @@ Welcome to the CryptPulse application from [CryptoRater.io](https://cryptorater.
 <br>
 
 ## QUICK START
-**[Run Demo Here](https://cryptorater-pulse.vercel.app "target=_blank")** :arrow_forward:
+**[Run Demo Here](https://cryptorater-pulse.vercel.app "target=_blank")** :triangular_flag_on_post:
 - **Step 1:**  [Download ZIP](https://github.com/lifeinthegrid/CryptoPulse/archive/refs/heads/main.zip) to your web-server and extract.
 - **Step 2:**  Open /src/app.json and edit to your liking. Coins with "active=true" will load on initialization.
 - **Step 3:**  Browse to application.  Use an API key (not required) to avoid rate limits from public API requests.
@@ -35,7 +35,7 @@ Notes:  The data from the API services are stored to the browsers localStorage c
  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)\
  This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
- Copyright (c) 2021 CryptoRater.io
+ Copyright (c) 2024 CryptoRater.io
 
  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to
  deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
