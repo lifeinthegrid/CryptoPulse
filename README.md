@@ -1,4 +1,4 @@
-# CryptoRater.io - Market Pulse
+# CryptoRater.io - CryptoPulse
 Author: Cory Lamle
 
 Welcome to this 100% free application from [CryptoRater.io](https://cryptorater.io). The CryptoRater - MarketPulse is a JavaScript client-side crypto currency dashboard for displaying crypto prices and market data. Use this as a stand-alone application or within your websites. This application can be applied to any project or website. The source is under the GPL3 license and can be used however you like.  Feel free to place it in personal or commercial products. This source is brought to you by [CryptoRater.io](https://cryptorater.io). Please check us out at for all your crypto product reviews.
