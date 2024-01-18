@@ -1,9 +1,9 @@
-# CryptoPulse - by: cryptorater.io
+# CryptoPulse
 Welcome to the CryptPulse application from [CryptoRater.io](https://cryptorater.io). The CryptoPulse app is a JavaScript client-side crypto currency dashboard for displaying crypto prices and market data. Use this as a stand-alone application or within your websites. This application can be applied to any project or website. The source is under the GPL3 license and can be used however you like.  Feel free to place it in personal or commercial products. This source is brought to you by [CryptoRater.io](https://cryptorater.io). Please check us out at for all your crypto product reviews.
 
 ## QUICK START
 **[Run Demo Here](https://cryptorater-pulse.vercel.app "target=_blank")** :arrow_forward:
-- Step 1:  [Download ZIP](https://github.com/lifeinthegrid/CryptoRater-Markets/tree/main) to your web-server and extract.
+- Step 1:  [Download ZIP](https://github.com/lifeinthegrid/CryptoPulse/archive/refs/heads/main.zip) to your web-server and extract.
 - Step 2:  Open /src/app.json and edit to your liking. Coins with "active=true" will load on initialization.
 - Step 3:  Browse to application.  It is recommended to use an API key to avoid rate limits imposed on public API requests.
 
