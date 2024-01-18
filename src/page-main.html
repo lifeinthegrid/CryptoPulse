@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptorater.io - CryptoGraphs</title>
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- ===========
+HEADER -->
+<div id="area-header">
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-12 col-md-6 col-lg-6 text-md-start ">
+				<div class="title fs-4 text-truncate">
+					<a href="https://cryptorater.io" target="_blank">
+						<i class="fa-solid fa-chart-line"></i>&nbsp;  CryptoRater.io -
+						<span class="fs-5">Market Pulse</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6 text-md-end">
+				<div id="days-group" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+					<input type="radio" class="btn-check" name="btn-radio" id="btn-radio7" value="7" />
+					<label class="btn btn-outline-secondary" for="btn-radio7">7d</label>
+
+					<input type="radio" class="btn-check" name="btn-radio" id="btn-radio14" value="14"  />
+					<label class="btn btn-outline-secondary" for="btn-radio14">14d</label>
+
+					<input type="radio" class="btn-check" name="btn-radio" id="btn-radio30" value="30"  />
+					<label class="btn btn-outline-secondary" for="btn-radio30">30d</label>
+
+					<input type="radio" class="btn-check" name="btn-radio" id="btn-radio90" value="90"  />
+					<label class="btn btn-outline-secondary" for="btn-radio90">90d</label>
+
+					<input type="radio" class="btn-check" name="btn-radio" id="btn-radio180" value="180"  />
+					<label class="btn btn-outline-secondary" for="btn-radio180">180d</label>
+
+					<input type="radio" class="btn-check" name="btn-radio" id="btn-radio365" value="365"  />
+					<label class="btn btn-outline-secondary" for="btn-radio365">1y</label>
+
+					<button id="btn-preferences" class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+						<i class="fa-solid fa-sliders"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		</div>
+</div>
+<!-- ===========
+CONTENT/SETTINGS -->
+<div id="area-content">
+	<div id="crypto-console"></div>
+	<div id="crypto-settings">
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasRightLabel">
+				<b class="fs-4"><i class="fa-solid fa-sliders"></i> Preferences</b>
+			</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<nav>
+				<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					<button class="nav-link active" id="nav-coins-tab" data-bs-toggle="tab" data-bs-target="#nav-coins" type="button" role="tab" aria-controls="nav-coins" aria-selected="true">
+						<i class="fa-brands fa-bitcoin"></i> Coins
+					</button>
+					<button class="nav-link" id="nav-settings-tab" data-bs-toggle="tab" data-bs-target="#nav-settings" type="button" role="tab" aria-controls="nav-settings" aria-selected="false">
+						<i class="fa-solid fa-gear"></i> Settings
+					</button>
+					<button class="nav-link" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about" aria-selected="false">
+						<i class="fa-solid fa-circle-info"></i> About
+					</button>
+				</div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+				<!-- COIN TAB -->
+				<div class="tab-pane show active py-4" id="nav-coins" role="tabpanel" aria-labelledby="nav-coins-tab" tabindex="0">
+					<div class="col-12">
+						<div class="form-check form-switch float-end">
+							<label class="form-check-label" for="list-group-coins-toggle">All Coins</label>
+							<input class="form-check-input" type="checkbox" role="switch" id="list-group-coins-toggle">
+						</div><br style="clear:both"/>
+						<ul id="list-group-coins" class="list-group"></ul>
+						<div class="notes text-center p-2">See app.json to add more coins.</div>
+
+					</div>
+				</div>
+				<!-- SETTINGS TAB -->
+				<div class="tab-pane py-4" id="nav-settings" role="tabpanel" aria-labelledby="nav-settings-tab" tabindex="0">
+					<form class="row g-3 was-validated">
+						<div class="col-12">
+							<div class="form-floating">
+								<select class="form-select" id="input-theme">
+									<option value="smooth">Smooth</option>
+									<option value="night">Night</option>
+								</select>
+								<label for="floatingSelect">Theme</label>
+							</div>
+						</div>
+
+						<div class="col-12"><b>API</b></div>
+						<div class="col-12">
+							<div class="form-floating">
+								<select class="form-select" id="select-api-platform" >
+									<option value="CoinGecko">Coin Gecko</option>
+									<option value="CoinMarketCap" disabled>Coin Market Cap</option>
+								</select>
+								<label for="floatingSelect">API Platform</label>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-floating">
+								<select class="form-select" id="select-api-type">
+									<option value="Public">Public </option>
+									<option value="Demo">Demo</option>
+									<option value="Pro">Pro</option>
+								</select>
+								<label for="floatingSelect">API Type</label>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-floating">
+								<input type="input" class="form-control" id="input-api-key" placeholder="CoinGecko API Key" required="false">
+								<label for="floatingInput">API Key</label>
+								<div class="invalid-feedback">Please provide your API Key.</div>
+							</div>
+						</div>
+
+						<div class="col-12"><b>Cache</b></div>
+							<div class="form-floating">
+								<input type="input" disabled class="form-control" id="input-cache-time" placeholder="Cache Timeout (minutes)" value="240" required="false">
+								<label for="floatingInput">Cache Timeout (minutes)</label>
+								<div class="invalid-feedback">Please provide a timeout period.</div>
+							</div>
+						<div class="col-12 text-center">
+							<button type="button" id="btn-refresh-coin-cache" class="btn btn-sm btn-outline-secondary">Refresh Coin Cache</button>
+							<button type="button" id="btn-clear-all-cache" class="btn btn-sm btn-outline-danger">Clear All Cache</button>
+
+						</div>
+					</form>
+				</div>
+				<!-- ABOUT TAB -->
+				<div class="tab-pane p-4" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab" tabindex="0">
+					<div id="version-info"></div><br/>
+					Welcome to this 100% free utility from <a href="https://cryptorater.io" target="_blank">CryptoRater.io</a>.
+					This standalone application	can be applied to any project or any site you have. <br/><br/>
+
+					The source is under the GPL3 license and can be used however you like.  Please check us out at CryptoRater.io
+					for all your crypto product reviews.
+					<br/><br/>
+
+					<b>BUILT WITH</b>
+					<ul>
+						<li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+						<li><a href="https://jquery.com/">jQuery</a></li>
+						<li><a href="https://fontawesome.com/">Font-Awesome</a></li>
+						<li><a href="https://www.chartjs.org/">Chart-JS</a></li>
+						<li><a href="https://www.coingecko.com/en/api">CoinGecko</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- ===========
+FOOTER -->
+<div id="area-footer">
+	<div class="d-flex">
+		<div id="status-message"></div>
+		<div class="flex-grow-1"></div>
+		<div class="text-nowrap">
+			Powered By <a href="https://www.coingecko.com/en/api/pricing">CoinGecko</a>
+			<div class="api-provider-logo"></div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import { ENV } 				from './js/Environment.js';
+	import { APP }				from './js/app/Application.js';
+	import { CoinConsole }		from './js/app/CoinConsole.js';
+	import { CacheManager }		from './js/util/CacheManager.js';
+	import { PageMain }			from './js/app/PageMain.js';
+
+	$(document).ready(async function()
+	{
+		//Load application
+		await APP.loadConfig('app.json', ENV.APP_CONFIG_KEY);
+		await APP.loadTheme();
+
+		//Run App
+		const main = new PageMain(APP);
+		main.start();
+
+		//Auto open settings
+		// $('#btn-preferences').click(function(event) {$('#offcanvasRight').offcanvas('show');});
+		// $('#btn-preferences').trigger('click');
+	});
+</script>
+
+</body>
+</html>

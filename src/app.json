@@ -1,0 +1,26 @@
+{
+	"currency": "usd",
+	"apiKey": "",
+	"apiType": "Public",
+	"days": "7",
+	"theme" : "smooth",
+	"cacheTimeout" : "240",
+	"coins": [
+		{ "id": "bitcoin",			"name": "Bitcoin",			"ticker": "BTC",	"active": true },
+		{ "id": "ethereum",			"name": "Ethereum",			"ticker": "ETH",	"active": true },
+		{ "id": "tether",			"name": "Tether",			"ticker": "USDT",	"active": false },
+		{ "id": "solana",			"name": "Solana",			"ticker": "SOL",	"active": false },
+		{ "id": "usd-coin",			"name": "USD Coin",			"ticker": "USDC",	"active": false },
+		{ "id": "binance",			"name": "BNB",				"ticker": "BNB",	"active": false },
+		{ "id": "ripple",			"name": "XRP",				"ticker": "XRP",	"active": false },
+		{ "id": "cardano",			"name": "Cardano",			"ticker": "ADA",	"active": false },
+		{ "id": "dogecoin",			"name": "Dogecoin",			"ticker": "DOGE",	"active": false },
+		{ "id": "polkadot",			"name": "Polkadot",   		"ticker": "DOT",	"active": false },
+		{ "id": "wrapped-bitcoin",	"name": "Wrapped Bitcoin",	"ticker": "WBTC",	"active": false },
+		{ "id": "avalanche-2",		"name": "Avalanche", 		"ticker": "AVAX",	"active": false },
+		{ "id": "terra-luna",		"name": "Terra Luna",		"ticker": "LUNA",	"active": false },
+		{ "id": "dai",				"name": "Dai",				"ticker": "DAI",	"active": false },
+		{ "id": "matic-network",	"name": "Polygon",			"ticker": "MATIC",	"active": false },
+		{ "id": "litecoin",			"name": "Litecoin",			"ticker": "LTC",	"active": false }
+	]
+  }

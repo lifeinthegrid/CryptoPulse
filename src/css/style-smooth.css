@@ -1,0 +1,6 @@
+/* ===============================
+THEMED STYLE SHEET
+=============================== */
+#area-header {background-color: #efefef; border-bottom: 1px solid silver;}
+#crypto-console .widget-container {border-radius:10px; box-shadow: 10px 10px 16px -4px rgba(107,107,107,1);}
+div.api-provider-logo {background-image: url("../imgs/coingecko-black.png"); background-size: cover; width: 18px;height: 18px; display: inline-block;}

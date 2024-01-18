@@ -1,0 +1,17 @@
+/* ===============================
+THEMED STYLE SHEET
+=============================== */
+body {background: #000; color:#fff}
+#area-header .title a {color:#fdf9f9; text-decoration: none; font-weight: bold;}
+#area-header .title a:hover {color:#7d66d3; text-decoration: none;}
+
+/* CANVAS */
+.offcanvas-body {background-color: #333;}
+.offcanvas-header {background-color: #333;}
+.offcanvas-header .btn-close {background-color:#999}
+.form-floating label {color:#000}
+.nav-tabs .nav-link {color:#fff !important}
+.nav-tabs .nav-link.active {color:#000 !important}
+
+div#area-footer {background: #000;}
+div.api-provider-logo {background-image: url("../imgs/coingecko-white.png"); background-size: cover; width: 18px;height: 18px; display: inline-block;}
