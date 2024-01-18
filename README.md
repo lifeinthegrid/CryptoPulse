@@ -3,11 +3,11 @@ Welcome to the CryptPulse application from [CryptoRater.io](https://cryptorater.
 
 ## QUICK START
 **[Run Demo Here](https://cryptorater-pulse.vercel.app "target=_blank")** :arrow_forward:
-- Step 1:  [Download ZIP](https://github.com/lifeinthegrid/CryptoPulse/archive/refs/heads/main.zip) to your web-server and extract.
-- Step 2:  Open /src/app.json and edit to your liking. Coins with "active=true" will load on initialization.
-- Step 3:  Browse to application.  It is recommended to use an API key to avoid rate limits imposed on public API requests.
+- **Step 1:**  [Download ZIP](https://github.com/lifeinthegrid/CryptoPulse/archive/refs/heads/main.zip) to your web-server and extract.
+- **Step 2:**  Open /src/app.json and edit to your liking. Coins with "active=true" will load on initialization.
+- **Step 3:**  Browse to application.  Use an API key (not required) to avoid rate limits from public API requests.
 
-Notes:  The data is stored to local cache for the duration of the cache timeout setting in the app.json file.
+Notes:  The data from the API services are stored to the browsers localStorage cache for the duration of the cache timeout setting in the app.json file. To get a free API key with limited requests, just visit the links below in the credits.
 
 ## CREDITS
 Author: Cory Lamle
@@ -16,8 +16,9 @@ Author: Cory Lamle
 * [jQuery](https://jquery.com)
 * [FontAwesome](https://fontawesome.com)
 * [Chart-JS](https://www.chartjs.org)
-* [CoinGecko-API](https://www.coingecko.com/api/documentations/v3)
 * [CoinGecko-API-Adapter](https://github.com/Archento/CoinGecko-API-Adapter)
+* [CoinGecko.com: API Docs](https://www.coingecko.com/api/documentations/v3)
+* [CoinGecko.com: Free API Key Sign Up](https://www.coingecko.com/en/api/pricing)
 
 ## LICENSE
  GPL V3 License
