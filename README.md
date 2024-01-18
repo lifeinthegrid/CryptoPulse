@@ -1,5 +1,7 @@
 # CryptoPulse
-Welcome to the CryptPulse application from [CryptoRater.io](https://cryptorater.io). The CryptoPulse app is a JavaScript client-side crypto currency dashboard for displaying crypto prices and market data. Use this as a stand-alone application or within your websites. This application can be applied to any project or website. The source is under the GPL3 license and can be used however you like.  Feel free to place it in personal or commercial products. This source is brought to you by [CryptoRater.io](https://cryptorater.io). Please check us out at for all your crypto product reviews.
+Welcome to the CryptPulse application from [CryptoRater.io](https://cryptorater.io). This app is a JavaScript client-side dashboard for displaying crypto prices and market data. This application can be applied to any project or website. The source is under the GPL3 license and can be used however you like.  Feel free to place it in personal/commercial products. This source is brought to you by [CryptoRater.io](https://cryptorater.io). Please check us out at for all your crypto product reviews.
+<br>
+<br>
 
 ## QUICK START
 **[Run Demo Here](https://cryptorater-pulse.vercel.app "target=_blank")** :arrow_forward:
@@ -8,21 +10,25 @@ Welcome to the CryptPulse application from [CryptoRater.io](https://cryptorater.
 - **Step 3:**  Browse to application.  Use an API key (not required) to avoid rate limits from public API requests.
 
 Notes:  The data from the API services are stored to the browsers localStorage cache for the duration of the cache timeout setting in the app.json file. To get a free API key with limited requests, just visit the links below in the credits.
+<br>
+<br>
 
 ## CREDITS
-AUTHOR: [Cory Lamle](https://lamle.org)\
-SPONSOR: [CryptoRater.io](https://cryptorater.io)
+**Author:** [Cory Lamle](https://lamle.org)\
+**Sponsor:** [CryptoRater.io](https://cryptorater.io)
 
-PROJECTS
+**Projects**
 * [Bootstrap](https://getbootstrap.com)
 * [jQuery](https://jquery.com)
 * [FontAwesome](https://fontawesome.com)
 * [Chart-JS](https://www.chartjs.org)
 * [CoinGecko-API-Adapter](https://github.com/Archento/CoinGecko-API-Adapter)
 
-API DATA SERVICES
+**API Services**
 * [CoinGecko.com: API Docs](https://www.coingecko.com/api/documentations/v3)
 * [CoinGecko.com: Free API Key Sign Up](https://www.coingecko.com/en/api/pricing)
+<br>
+<br>
 
 ## LICENSE
  GPL V3 License
