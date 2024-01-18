@@ -10,13 +10,17 @@ Welcome to the CryptPulse application from [CryptoRater.io](https://cryptorater.
 Notes:  The data from the API services are stored to the browsers localStorage cache for the duration of the cache timeout setting in the app.json file. To get a free API key with limited requests, just visit the links below in the credits.
 
 ## CREDITS
-Author: Cory Lamle
+AUTHOR: [Cory Lamle](https://lamle.org)\
+SPONSOR: [CryptoRater.io](https://cryptorater.io)
 
+PROJECTS
 * [Bootstrap](https://getbootstrap.com)
 * [jQuery](https://jquery.com)
 * [FontAwesome](https://fontawesome.com)
 * [Chart-JS](https://www.chartjs.org)
 * [CoinGecko-API-Adapter](https://github.com/Archento/CoinGecko-API-Adapter)
+
+API DATA SERVICES
 * [CoinGecko.com: API Docs](https://www.coingecko.com/api/documentations/v3)
 * [CoinGecko.com: Free API Key Sign Up](https://www.coingecko.com/en/api/pricing)
 
